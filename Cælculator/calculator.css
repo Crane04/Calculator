@@ -1,0 +1,183 @@
+body{
+    background:grey;
+    width: 340px;
+    height: auto;
+    margin: 0 auto;
+}
+#inp-el{
+    width:300px;
+    height:50px;
+    font-size:larger;
+}
+.display{
+    height:30px;
+    width:300px;
+    border:none;
+}
+#ans-el{
+    text-align: right;
+}
+#function-cont{
+    width:99%;
+    height:180px;
+    border:1px black solid;
+    background: white;
+}
+#container{
+    
+    
+}
+.arith{
+    color:yellow;
+    background: black;
+    text-align:center;
+    font-size:large;
+    width:47px;
+    height:41px;
+}
+.arith:hover{
+    background:yellow;
+    color:black;
+    transition:0.5s;
+}
+#first-inputs {
+    display:inline;
+}
+.digits{
+    color:red;
+    text-align:center;
+    font-size:larger;
+    width:58px;
+    height:55px;
+}
+.digits:active{
+    color:white;
+    background: red;
+    transition:0.5s;
+}
+.brac{
+    width:27px;
+    height:52px;
+    color:red;
+    text-align:center;
+    font-size:larger;;
+    
+}
+.brac:active{
+    color:white;
+    background: red;
+    transition:0.5s;
+}
+
+img{
+    width:40px;
+}
+#nav-bar{
+    display: none;
+    height:auto;
+    background:red ;
+    width:80%;
+    color:white;
+}
+li{
+    list-style:none;
+    float:left;
+    margin-left:-20px;
+    overflow:scroll;
+}
+.fa-times{
+    float:right;
+    margin:6px;
+    font-size: 1000px;
+    color:white;
+}
+.fa-times:hover {
+    color:red;
+    background: white;
+
+}
+nav nav{
+    overflow:scroll;
+    position: absolute;
+    background: red;
+    height:100vh;
+}
+.style1{
+    display:none;
+}
+.style2{
+    display:none;
+}
+.style3{
+    display:inline;
+     color:yellow;
+    background: black;
+    text-align:center;
+    font-size:large;
+    width:47px;
+    height:41px;
+}
+#equation{
+    background: grey;
+    color: white;
+    display:none;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+input{
+    width:25px;
+    height:25px;
+}
+#l-eqn{
+    text-align:center;
+}
+button{
+    background: red;
+    color:white;
+    width:130px;
+    height:40px;
+    border:red 1px solid;
+    border-radius:4px;
+}
+#simul-options{
+    background: red;
+    /*width:90px;
+    height:150px;*/
+    text-align: center;
+}
+.anchor{
+    line-height:30px ;
+    padding:5px;
+    text-align: center;
+    font-weight:bolder;
+    width:auto;
+    /*display:block;*/
+}
+a:hover{
+    color:red;
+    background: white;
+}
+#simul-ans, #poly-ans, #lam-ans{
+    background: blue;
+    text-align: center;
+   /* height: 150px;
+    overflow:scroll;
+    float:right;
+    width:200px;
+    margin-top:-150px;
+    padding:6px;*/
+}
+.simulBut,.poly-but{
+    width:70px;
+    
+}
+button:hover{
+    border:red 1px solid;
+    color: red;
+    background: white;
+    transition:.5s;
+}
+

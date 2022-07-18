@@ -1,0 +1,228 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  
+<nav id="nav-bar">
+    <nav id="inn-nav">
+    Scientific Constants
+    <i id="timesEl" class="fa fa-times" style="font-size:30px" aria-hidden="true">x</i>
+   <ul>
+<li><b>Speed of Light in Air</b><br>
+<span> 3×10<sup>8</sup>ms-¹</span></li><br><br><br>
+<li><b>Speed of Sound in Air</b><br>
+<span>330ms-¹</span></li><br><br><br>
+<li><b>Acceleration due to gravity on Earth</b><br>
+<span>9.8ms-²</span></li><br><br><br>
+<li><b>Atmospheric Pressure</b><br>
+<span>1.01×10⁵Nm-²</span></li><br><br><br>
+<li><b>Gravitational Constant</b><br>
+<span>6.67×10¹¹Nm²kg-³</span></li><br><br><br>
+<li><b>Pi(π)</b><br>
+<span>22/7</span></li><br><br><br>
+<li><b>Mass of Proton</b><br>
+<span>1.6726217 × 10-²⁴g</span></li><br><br><br>
+<li><b>Plank's constant</b><br>
+<span>6.62×10-³⁴JHz-¹</span></li><br><br><br>
+<li><b>Absolute zero</b><br>
+<span>0K</span></li><br><br><br>
+<li><b>Boltzmann's Constant</b><br>
+<span>1.380649×10-²³JK-¹</span></li><br><br><br>
+<li><b>Vacuum Electric Permittivity</b><br>
+<span>8.85×10-¹² Fm−¹</span></li><br><br><br>
+<li><b>Electron Mass</b><br>
+<span>9.1×10−³¹kg</span></li><br><br><br>
+<li><b>Density of Water</b><br>
+<span>1000kgm-³</span></li><br><br><br>
+<li><b>Specific Heat Capacity of Water</b><br>
+<span>4200Jkg-¹K-¹</span></li><br><br><br>
+<li><b>Euler's Number (e)</b><br>
+<span>2.7182818284...</span></li><br><br><br>
+<li><b>Pythagoras Constant</b><br>
+<span>√2</span></li><br><br><br>
+<li><b>Atomic Mass Unit</b><br>
+<span>1.66 x10-²⁷kg</span></li><br><br><br>
+<li><b>Avogadro's Number</b><br>
+<span>6.022 x 10²³ mol-¹</span></li><br><br><br>
+<li><b>Bohr Radius</b><br>
+<span>0.529 x 10-¹⁰m</span></li><br><br><br>
+<li><b>Electron classical radius</b><br>
+<span>2.818 x 10-¹⁵ m</span></li><br><br><br>
+<li><b>Faraday's Constant</b><br>
+<span>96500C mol-1</span></li><br><br><br>
+<li><b>Gas Constant</b><br>
+<span>8.314 Jmol-¹K-¹</span></li><br><br><br>
+<li><b>Neutron Mass Energy</b><br>
+<span>1.505 x 10-¹⁰ J</span></li><br><br><br>
+<li><b>Golden ratio</b><br>
+<span>(1±√5)/2</span></li><br><br><br>
+<li><b>Molar Volume of Gas</b><br>
+<span>22.4dm³</span></li><br><br>       
+   </ul>   
+   </nav> 
+</nav>
+
+    <section id="container">
+<div class="calsi">
+<section id="first-inputs">
+  <div id="dis-cont">
+<input type="text" class="display" id="inp-el" readonly >
+<input type="text" class="display" id="ans-el" readonly><br><br>
+</div>
+<input class="arith" value="Shift" onclick="sht()" readonly>
+<!--a href="https://crane04.github.io/Converrsion/Conversion/conversion.html"-->
+    
+<input  class="arith" value="Conv" readonly></a>
+
+<a href="C:\Users\USER\Desktop\My Js Projects\Conversion\conversion.html">
+    
+  <input  class="arith" value="Conv" readonly></a>">
+    
+  <input  class="arith" value="Conv" readonly></a>
+    
+<input id="eqn" class="arith" value="Eqn" readonly>
+<input id="const" class="arith" onclick="cons()" id="cons" value="Const" readonly>
+<input class="arith" onclick="num('log(')" value="Log" readonly>
+<input class="arith" onclick="num('ln(')" value="Ln" readonly>
+<input id="sin" class="arith" onclick="num('sin(')" value="Sin" readonly>
+<input id="cos" class="arith" onclick="num('cos(')" value="Cos" readonly>
+<input id="tan" class="arith" onclick="num('tan(')" value="Tan" readonly>
+
+<input class="style2" id="insin" class="arith" onclick="num('asin(')" value="Sin-¹" readonly>
+<input class="style2" id="incos" class="arith" onclick="num('acos(')" value="Cos-¹" readonly>
+<input class="style2" id="intan" class="arith" onclick="num('atan(')" value="Tan-¹" readonly>
+
+<input class="arith" onclick="num('e(')" value="e" readonly>
+<input class="arith" onclick="num('**(1/2)')" value="√" readonly>
+<input class="arith" onclick="num('**(1/3)')" value="³√" readonly>
+<input class="arith" onclick="num('**(2)')" value="x²" readonly>
+<input class="arith" onclick="num('**(3)')" value="x³" readonly>
+<input id="sec" class="arith" onclick="num('sec(')" value="Sec" readonly>
+
+<input id="csc" class="arith" onclick="num('csc(')" value="Csc" readonly>
+<!--input class="arith" onclick="num('W(')" value="W" readonly-->
+<input id="cot" class="arith" onclick="num('cot(')" value="Cot" readonly>
+
+
+<!--input class="style2" class="arith" id="asec" onclick="num('asec(')" value="Sec-¹" readonly>
+<input class="style2" class="arith" id="acsc" onclick="num('acsc(')" value="Csc-¹" readonly>
+<input class="style2" class="arith" id="acot" onclick="num('acot(')" value="Cot-¹" readonly-->
+
+
+<input class="arith" onclick="num('1/')" value="1/x" readonly>
+<input class="arith" onclick="num('**')" value="^" readonly>
+
+<input class="arith" onclick="pi()" value="π" readonly>
+<input class="arith" onclick="num('factorial(')" value="x!" readonly>
+<input id="sinh" class="arith" onclick="num('sinh(')" value="Sinh" readonly>
+<input id="cosh" class="arith" onclick="num('cosh(')" value="Cosh" readonly>
+<input id="tanh" class="arith" onclick="num('tanh(')" value="Tanh" readonly>
+
+<input class="style2" id="insinh" class="arith" onclick="num('asinh(')" value="Sinh-¹" readonly>
+<input class="style2" id="incosh" class="arith" onclick="num('acosh(')" value="Cosh-¹" readonly>
+<input class="style2" id="intanh" class="arith" onclick="num('atanh(')" value="Tanh-¹" readonly>
+<!--input class="arith" onclick="num('combination(')" value="nCr" readonly>
+<input class="arith" onclick="num(',')" value="," readonly-->
+
+
+<div class="btns">
+<input class="digits" onclick="num(1)" value="1" readonly>
+<input class="digits" onclick="num(2)" value="2" readonly>
+<input class="digits" onclick="num(3)" value="3" readonly>
+<input class="digits" onclick="num('+')" value="+" readonly>
+<input class="digits" onclick="exe()" value="=" readonly><br>
+<input class="digits" onclick="num(4)" value="4" readonly>
+<input class="digits" onclick="num(5)" value="5" readonly>
+<input class="digits" onclick="num(6)" value="6" readonly>
+<input class="digits" onclick="num('-')" value="-" readonly>
+<input class="digits" onclick="cancel()" value="⌫" readonly><br>
+<input class="digits" onclick="num(7)" value="7" readonly>
+<input class="digits" onclick="num(8)" value="8" readonly>
+<input class="digits" onclick="num(9)" value="9" readonly>
+<input class="digits" onclick="num('*')" value="×" readonly>
+<input class="digits" onclick="cls()" value="AC" readonly><br>
+<input class="digits" onclick="num('.')" value="."readonly >
+<input class="digits" onclick="num(0)" value="0" readonly>
+<input class="digits" onclick="random()" value="rnd" readonly >
+<input class="digits" onclick="num('/')" value="÷" readonly>
+<input class="brac" onclick="num('(')" value="(" readonly>
+<input class="brac" onclick="num(')')" value=")" readonly>
+</section>
+
+</div>
+</section>
+<section id="equation">
+    <i id="backEl" class="fa fa-times" aria-hidden="true" style="font-size:30px;">x</i>
+<h3>Linear Equations</h3>
+ <div id="l-eqn">
+  <input type="number" id="l1"> x +
+  <input type="number" id="n1"> =
+  <input type="number" id="r1"><br><br>
+  <button onclick="ans1()">Answer</button>
+  <button onclick="show1()">Show solution</button>
+  <p id="soln1"></p>
+  <hr>
+ </div>
+ <h3>Simultaneous Equation</h3>
+ <div id="s-eqn">
+     <div id="simul-options">
+      <a class="anchor" onclick="simul2()">2 Unknowns</a>|
+      <a class="anchor" onclick="simul3()">3 Unknowns</a>|
+      <a class="anchor">4 Unknowns</a> 
+     </div><br>
+<div id="simul-ans">
+    <br>
+     Choose an Equation 👍
+    
+</div>
+<hr>
+<h3>Polynomials</h3>
+ <div id="p-eqn">
+     <div id="simul-options">
+      <a class="anchor" onclick="quadr()">Quadratics</a>|
+      <a onclick="cubic()" class="anchor">Cubic</a>|
+      <a onclick="quartics()" class="anchor">Quartics</a> 
+     </div><br>
+<div id="poly-ans">
+    <br>
+ <a href="mayowayusuf3004@gmail.com">yes</a>   
+     Choose an Equation 👍
+     <br>
+     </div>
+   <hr>  
+   <h3>Lambert Function Solutions</h3>
+ <div id="l-eqn">
+     <div id="simul-options">
+   <a class="anchor" onclick="fLam()">ax<sup>nx</sup> = c</a>|
+ <a class="anchor" onclick="sLam()">aLnx = nx + c</a>|
+    <a class="anchor" onclick="tLam()">na<sup>x</sup> = bx + c  </a> <br>
+      <a class="anchor" onclick="foLam()">ax<sup>p</sup>e<sup>nx</sup> = c</a>|
+      <a class="anchor" onclick="fiLam()">ax + pe<sup>nx</sup> = c</a>
+     </div><br>
+<div id="lam-ans">    
+    <br>
+    
+     Choose an Equation 👍<br><br>
+     Compute your answer with Wolfram Alpha
+
+   <br>  <br>
+   
+</div>     
+<hr>
+<i>To get solutions to your unsolved questions. You can reach the Craennie Team using your Favorite platforms below:</i>
+<br>
+<a href="mailto: mayowayusuf3004@gmail.com"> <img src="gmail.png"></a> 
+<a href="https://www.facebook.com/profile.php?id=100071760025096"><img src="facebook.png"></a>
+<a href="https://twitter.com/Craennie?t=GI7UVFn2Rg4g2vycPcQweg&s=08"><img src="twitter.png">></a>
+<a href="http://wa.me/+2347086862109"><img src="whatsapp.png"> </a>
+</section>
+<script src="calculator.js">
+</script>
+</body>
+</html>
